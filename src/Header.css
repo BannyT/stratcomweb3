@@ -33,3 +33,18 @@
     letter-spacing: 3px;
     color: #364fc7;
 }
+.nav-list{
+   display: flex;
+   gap: 2rem;
+   list-style: none;
+   align-items: center;
+}
+
+.nav-item >a {
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1971c2;
+    padding: 0.5rem;
+    position: relative;
+}
