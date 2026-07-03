@@ -60,6 +60,20 @@ const AboutUs = () => {
             />
           </div>
         </div>
+
+        {/* stats section  */}
+
+        <div className='stats-grid'>
+          {stats.map((stat,idx)=>(
+              <div className='stat-card' key={idx}>
+                    <div className='stat-number'>{stat.number}</div>
+                    <p className='stat-label'>{stat.label}</p>
+              </div> 
+          ))
+
+          }
+
+        </div>
     
       </div>
     </section>
