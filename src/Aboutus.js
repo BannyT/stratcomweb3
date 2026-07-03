@@ -70,8 +70,22 @@ const AboutUs = () => {
                     <p className='stat-label'>{stat.label}</p>
               </div> 
           ))
-
           }
+        </div>
+
+        <div className='values-section'>
+            <h3 className='values-title'>Our Core Values</h3>
+            <div className='values-grid'>
+               {values.map((value,idx)=>(
+                    <div className='value-card' key={idx}>
+                         <div className='value-icon'>{idx === 0 ? '💡' : idx === 1 ? '⭐' : idx === 2 ? '🔒' : '🌍'}</div>
+                         <h4 className='value-title'>{value.title}</h4>
+                         <p>{value.desc}</p>
+
+                    </div>
+               ))}
+
+            </div>
 
         </div>
     
