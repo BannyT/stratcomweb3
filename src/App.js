@@ -9,9 +9,22 @@ import  {BrowserRouter as Router,Routes,Route} from  'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Aboutus/>
-      <Services/>
+      <Router>
+          <Routes>
+             <Route  path='/*' element={
+              <>
+               <Header/>
+                <Routes>
+                   <Route path='/' element={<Home/>} />
+                   <Route path='/aboutus' element={<Aboutus/>} />
+                   <Route path='/services' element={<Services/>} />
+
+                </Routes>  
+              </>
+             } />
+          </Routes>
+      </Router>
+      
     </div>
   );
 }
