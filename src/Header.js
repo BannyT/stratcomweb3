@@ -14,8 +14,8 @@ function Header() {
            <nav className='nav-menu'>
               <ul className='nav-list'>
                  <li className='nav-item'> <a href='/' >Home</a> </li>
-                 <li className='nav-item'> <a href='/' >About Us</a> </li>
-                 <li className='nav-item'> <a href='/' >Services</a> </li>
+                 <li className='nav-item'> <a href='/aboutus' >About Us</a> </li>
+                 <li className='nav-item'> <a href='/services' >Services</a> </li>
                  <li className='nav-item'> <a href='/' >Signup</a> </li>
                  <li className='nav-item'> <a href='/' >Login</a> </li>
                  
