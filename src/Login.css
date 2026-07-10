@@ -60,3 +60,25 @@
       border: none;
       background: white;
  }
+
+ .login-button{
+     width: 100%;
+     padding: 0.9rem;
+     background: #1864ab;
+     cursor: pointer;
+     margin: 3px;
+     border: none;
+     border-radius: 18px;
+     color: white;
+ }
+
+ .login-switch{
+    color:#212529 ;
+    margin-top: 1.8rem;
+    font-size: 0.7;
+
+ }
+
+ .login-switch a{
+    text-decoration: none;
+ }

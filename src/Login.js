@@ -19,7 +19,11 @@ function Login() {
                     <label>Password</label>
                     <input type='password' placeholder="*******" />
               </div>
+              <button className='login-button'>Sign In</button>
            </div>
+           <p className='login-switch'>
+                Don't Have an Account ? <a href='/signup' > Sign Up</a>
+           </p>
 
         </div>
     </div>
