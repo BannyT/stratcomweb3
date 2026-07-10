@@ -22,7 +22,8 @@
     margin-bottom: 15px;
 }
 
-.login-brand{
+.login-brand a{
+    text-decoration: none;
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 0.6rem;
