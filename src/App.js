@@ -4,6 +4,8 @@ import Header from './Header';
 import Home from './Home';
 import Aboutus from './Aboutus';
 import Services from './Services';
+import Login from './Login';
+import Signup from './Signup';
 import  {BrowserRouter as Router,Routes,Route} from  'react-router-dom'
 
 function App() {
@@ -17,11 +19,14 @@ function App() {
                 <Routes>
                    <Route path='/' element={<Home/>} />
                    <Route path='/aboutus' element={<Aboutus/>} />
-                   <Route path='/services' element={<Services/>} />
-
+                 <Route path='/services' element={<Services/>} />
                 </Routes>  
               </>
              } />
+              <Route path='/login' element={<Login/>} />
+              <Route path='/signup' element={<Signup/>} />
+
+
           </Routes>
       </Router>
       
