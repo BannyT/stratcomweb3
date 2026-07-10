@@ -23,7 +23,7 @@ function Signup() {
                     <label>Password</label>
                     <input type='password' placeholder="*******" />
               </div>
-              <button className='signup-button'>Sign In</button>
+              <button className='signup-button'>Create Account</button>
            </div>
            <p className='signup-switch'>
                 Already Have an Account ? <a href='/login' >Login</a>
