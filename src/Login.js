@@ -3,8 +3,15 @@ import './Login.css'
 
 function Login() {
   return (
-    <div>
-      <h2>this is login</h2>
+    <div className='login-page'>
+        <div className='login-card'>
+           <div className='login-header'>
+                 <span className='login-brand'> Stratcom</span>
+                 <h2>Wecome Back</h2>
+                 <p> Sign In to Access Your Account</p>
+           </div>
+
+        </div>
     </div>
   )
 }
