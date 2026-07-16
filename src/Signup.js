@@ -8,7 +8,13 @@ const [password,setPassword]=useState('')
 const [username, setUserName]=useState('')
 const [email,setEmail]=useState('')
 
-    console.log('username',username)  
+    console.log('username',username)
+    
+
+    console.log('email',email)
+    
+
+    console.log('password',password)  
 
      
 
@@ -27,11 +33,11 @@ const [email,setEmail]=useState('')
               </div>
               <div className='signup-form-group'>
                     <label>Email Address</label>
-                    <input type='text' placeholder="e.g tom@gmail.com" />
+                    <input value={email} onChange={(e)=>setEmail(e.target.value)} type='text' placeholder="e.g tom@gmail.com" />
               </div>
               <div className='signup-form-group'>
                     <label>Password</label>
-                    <input type='password' placeholder="*******" />
+                    <input value={password}  onChange={(e)=>setPassword(e.target.value)} type='password' placeholder="*******" />
               </div>
               <button className='signup-button'>Create Account</button>
            </div>
