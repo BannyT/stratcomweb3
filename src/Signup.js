@@ -1,20 +1,20 @@
 import React,{useState} from 'react'
 import {auth,createUserWithEmailAndPassword,updateProfile} from './firebase'
 import './Signup.css'
+import {useNavigate} from 'react-router-dom'
 
 function Signup() {
 //      javacscript happens here
 const [password,setPassword]=useState('')
 const [username, setUserName]=useState('')
 const [email,setEmail]=useState('')
+const [loading,setLoading]=useState(false)
 
-    console.log('username',username)
-    
+const navigation =useNavigate()
 
-    console.log('email',email)
-    
-
-    console.log('password',password)  
+     const createAccount=()=>{
+         
+     }
 
      
 
