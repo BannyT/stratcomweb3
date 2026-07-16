@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {auth,createUserWithEmailAndPassword,updateProfile} from './firebase'
 import './Signup.css'
 import {useNavigate} from 'react-router-dom'
+import { async } from '@firebase/util'
 
 function Signup() {
 //      javacscript happens here
@@ -9,11 +10,23 @@ const [password,setPassword]=useState('')
 const [username, setUserName]=useState('')
 const [email,setEmail]=useState('')
 const [loading,setLoading]=useState(false)
+const [error, setError]=useState('')
 
 const navigation =useNavigate()
 
-     const createAccount=()=>{
-         
+     const createAccount= async()=>{
+            setError('')
+            if(password.length<6){
+                  setError('Password Must Have more than 6 characters')
+                  return;
+            }
+            setLoading(true)
+            try{
+                  const userCredential = await createUserWithEmailAndPassword(auth,email,password)
+                  const user =userCredential.user;
+                  await updateProfile(user,{displayName:username})
+                  alert('Account Created Successfully')
+            }   
      }
 
      
