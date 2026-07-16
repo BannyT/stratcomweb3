@@ -1,7 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
+import {auth,createUserWithEmailAndPassword,updateProfile} from './firebase'
 import './Signup.css'
 
 function Signup() {
+//      javacscript happens here
+const [password,setPassword]=useState('')
+const [username, setUserName]=useState('')
+const [email,setEmail]=useState('')
+
+    console.log('username',username)  
+
+     
+
   return (
     <div className='signup-page'>
         <div className='signup-card'>
@@ -13,7 +23,7 @@ function Signup() {
            <div className='signup-form'>
            <div className='signup-form-group'>
                     <label>User Name</label>
-                    <input type='text' placeholder="e.g Tumusiime" />
+                    <input value={username} onChange={(e)=>setUserName(e.target.value)} type='text' placeholder="e.g Tumusiime" />
               </div>
               <div className='signup-form-group'>
                     <label>Email Address</label>
