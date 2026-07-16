@@ -5,14 +5,14 @@ import {collection,addDoc,getDocs,updateDoc,deleteDoc,doc,onSnapshot,query,order
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDsetUCeMH_HVV-oKJ1ulMSKhmb3Q24YBg",
-    authDomain: "group2-da93d.firebaseapp.com",
-    projectId: "group2-da93d",
-    storageBucket: "group2-da93d.firebasestorage.app",
-    messagingSenderId: "974956319159",
-    appId: "1:974956319159:web:8f34f28a0719b946afd832",
-    measurementId: "G-WYWTBXYZR9"
-  };
+  apiKey: "AIzaSyB3Ue2QxvavMI6r80E7YferdKoEd8Ri33w",
+  authDomain: "web3-9bd3d.firebaseapp.com",
+  projectId: "web3-9bd3d",
+  storageBucket: "web3-9bd3d.firebasestorage.app",
+  messagingSenderId: "711063095864",
+  appId: "1:711063095864:web:c6dde5d06dc32a021634cd",
+  measurementId: "G-3CXRGYMV79"
+};
 
   //initialzing firebase app here
 

@@ -17,7 +17,8 @@ function Signup() {
 
       // fucntion to create Account
 
-       const createAccount = async ()=>{
+       const createAccount = async (e)=>{
+               e.preventDefault()
                setError('')
                if(password.length < 6){
                   setError('Password Must be atleast 6 characters')
