@@ -2,8 +2,14 @@ import React from 'react'
 
 function Dashboard() {
   return (
-    <div>
-      <h2>this is a dasboard</h2>
+    <div className='dashboard-container'>
+         <div className='dashboardtopbar'>
+                <div className='topleft'>        
+                    <span className='logo'> STratcom</span>
+                    <span className='greetings'>Hello STRACOM USER</span>
+                </div>
+                <button className='logout'>Logout</button>
+          </div> 
     </div>
   )
 }

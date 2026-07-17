@@ -6,6 +6,7 @@ import Aboutus from './Aboutus';
 import Services from './Services';
 import Login from './Login';
 import Signup from './Signup';
+import Footer from './Footer'
 import  {BrowserRouter as Router,Routes,Route} from  'react-router-dom'
 import Dashboard from './Dashboard';
 
@@ -22,6 +23,7 @@ function App() {
                    <Route path='/aboutus' element={<Aboutus/>} />
                  <Route path='/services' element={<Services/>} />
                 </Routes>  
+                <Footer/>
               </>
              } />
               <Route path='/login' element={<Login/>} />
