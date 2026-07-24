@@ -93,7 +93,7 @@ const Dashboard = () => {
           updatedAt: new Date().toISOString(),
           userId: user ? user.uid : null,
         });
-        alert('Activity added!');
+        alert('Activity added Sucessfully!');
       }
       resetForm();
     } catch (error) {
@@ -195,7 +195,7 @@ const Dashboard = () => {
       },
     });
   
-    doc.save('internship-logbook.pdf');
+    doc.save('myactivities.pdf');
   };
 
   if (!user) {
@@ -311,6 +311,7 @@ const Dashboard = () => {
           )}
         </div>
       </div>
+    
     </div>
   );
 };
